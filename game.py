@@ -1,5 +1,7 @@
 import sys, pygame
 from pygame.locals import *
+import sys, pygame
+from pygame.locals import *
 
 pygame.init()
 size = width, height = 800, 600
@@ -27,8 +29,12 @@ while 1:
                 speed[1] = -1
             elif pygame.key.get_pressed()[K_s] and not pygame.key.get_pressed()[K_w]:
                 speed[1] = 1
+            elif pygame.key.get_pressed()[K_SPACE]:
+                speed[1] = -1
             else:
-                speed[1] = 0
+                speed[1] = 0    
+    if(ballrect.y > height):
+        ballrect.y = height
     ballrect = ballrect.move(speed)
     screen.fill(black)
     screen.blit(ball, ballrect)
