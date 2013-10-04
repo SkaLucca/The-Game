@@ -4,13 +4,13 @@ import sys, pygame
 from pygame.locals import *
 
 pygame.init()
-size = width, height = 800, 600
+size = width, height = 1000, 800
 speed = [0, 0]
 black = 0, 0, 0
 
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption('The Game')
-ball = pygame.image.load("ball.gif")
+ball = pygame.image.load("happypizza.jpg")
 ballrect = ball.get_rect()
 
 while 1:
