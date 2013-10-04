@@ -1,7 +1,5 @@
 import sys, pygame
 from pygame.locals import *
-import sys, pygame
-from pygame.locals import *
 
 pygame.init()
 size = width, height = 1000, 800
